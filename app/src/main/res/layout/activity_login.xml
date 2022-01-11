@@ -63,6 +63,8 @@
     <com.google.android.material.button.MaterialButton
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="32dp"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
         android:id="@+id/loginAceptButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

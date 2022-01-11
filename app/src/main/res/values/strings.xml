@@ -17,4 +17,12 @@
     <string name="rules">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение</string>
     <string name="enter">Вход</string>
     <string name="enterAccept">Войти</string>
+    <string-array name="tab_names">
+        <item>Моя</item>
+        <item>Пользователей</item>
+    </string-array>
+    <string name="activity">Активность</string>
+    <string name="profile">Профиль</string>
+    <string name="time_to_work">Время потренить</string>
+    <string name="how_to_work">Нажимай на кнопку ниже и начинаем \n трекать активность</string>
 </resources>
