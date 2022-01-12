@@ -4,81 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingHorizontal="16dp"
-    android:paddingTop="?attr/actionBarSize"
-    tools:context=".WelcomeActivity">
+    tools:context=".welcomescreen.WelcomeActivity">
 
     <ImageView
-        android:id="@+id/riders"
-
+        android:id="@+id/bike_welcome"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:contentDescription="@string/logo_riders"
-
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_login_riders"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/image"
+        app:layout_constraintBottom_toTopOf="@id/welcomeScroll"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_bike" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <ScrollView
+        android:id="@+id/welcomeScroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/slogan"
-        android:textAlignment="center"
-        android:textColor="#101010"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/riders"
-        app:lineHeight="35sp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/second_slogan"
-        android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/registrationButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="@color/primary"
-        android:paddingHorizontal="24dp"
-        android:insetBottom="0dp"
-        android:insetTop="0dp"
-
-        android:text="@string/register"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@id/textView3"
-        app:layout_constraintBottom_toTopOf="@id/loginButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/loginButton"
-
-        style="@style/TextButton"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginBottom="48dp"
-        android:text="@string/have_account"
-        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-         />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/bestText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/slogan"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lastText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/second_slogan"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/registrationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:text="@string/register"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="60dp"
+                android:text="@string/have_account"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

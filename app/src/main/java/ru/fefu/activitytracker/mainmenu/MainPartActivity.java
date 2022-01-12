@@ -1,18 +1,17 @@
-package ru.fefu.activitytracker.main;
-
-import android.os.Bundle;
-import android.view.MenuItem;
+package ru.fefu.activitytracker.mainmenu;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.os.Bundle;
+import android.view.MenuItem;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-import ru.fefu.activitytracker.R;
-import ru.fefu.mainpart.ProfileFragment;
+import ru.fefu.activitytracker.R;import ru.fefu.mainmenu.ProfileFragment;
 
 
 public class MainPartActivity extends AppCompatActivity implements NavigationBarView.OnItemSelectedListener{
