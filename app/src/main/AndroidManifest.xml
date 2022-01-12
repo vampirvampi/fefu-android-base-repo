@@ -10,12 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Activity">
         <activity
-            android:name=".MenuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MyActivity"
+            android:name=".main.MainPartActivity"
             android:exported="true">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".LoginActivity"
@@ -28,11 +30,6 @@
         <activity
             android:name=".WelcomeActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
 
