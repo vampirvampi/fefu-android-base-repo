@@ -1,9 +1,6 @@
-package ru.fefu.activitytracker.main;
+package ru.fefu.activitytracker.mainmenu;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,10 +8,15 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 import ru.fefu.activitytracker.R;
+import ru.fefu.activitytracker.mainmenu.FragmentAdapter;
 
 public class ActivityFragment extends Fragment {
 
