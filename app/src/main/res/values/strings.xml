@@ -23,6 +23,7 @@
     </string-array>
     <string name="activity">Активность</string>
     <string name="profile">Профиль</string>
-    <string name="time_to_work">Время потренить</string>
-    <string name="how_to_work">Нажимай на кнопку ниже и начинаем \n трекать активность</string>
+    <string name="my_activity">Моя</string>
+    <string name="user_activity">Пользователей</string>
+
 </resources>
